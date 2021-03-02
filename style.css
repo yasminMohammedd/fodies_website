@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+a{
+  color: black;
+}
+html{
+scroll-behavior: smooth !important;
+overflow-y: scroll;
+
+}
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+  .first_section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+      position: relative;
+      width:18vh;
+      vertical-align: middle;
+      margin: 20px;
+      border-bottom: 5px solid #79942e;
+      border-bottom-right-radius: 5px;
+  }
+  header ul{
+    position: relative;
+    display:flex;
+  }
+  header ul li{
+    list-style: none;
+    padding:5px;
+  }
+  header ul li a{
+    display: inline-block;
+    color:black;
+    margin: 20px;
+    padding:5px;
+    text-decoration:none;
+    font-size: 24px;
+    text-align:center;
+  }
+  header ul li :hover{
+  background-color: #f1921363;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  }
+
+ .main_content{
+   position: relative;
+   width: 100%;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .food_info{
+   position: relative;
+   width: 100%;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .textBox{
+   position: relative;
+   max-width: 80vh;
+  line-height: 1.8em;
+ }
+ .textBox h1{
+   font-size: 4em;
+   line-height: 1.4em;
+   font-weight: 500;
+ }
+ .imgBox{
+   position: relative;
+   display: flex;
+   justify-content: flex-end;
+  animation:animatetop 1s;
+ }
+ .textBox ul{
+   position: relative;
+
+
+ }
+ .textBox ul li{
+   list-style: none;
+ }
+   .textBox ul li a{
+   display: inline-block;
+   float: left;
+   color:black;
+   text-decoration:none;
+   font-size: 15px;
+ }
+ .fa:hover{
+   color:#f19213;
+ }
+ .span_btn a{
+   display: inline-block;
+   background-color: #f19213;
+   text-align: center;
+   padding:10px;
+   text-decoration: none;
+   font-size: 1em;
+  opacity: .8;
+ }
+ .span_btn :hover{
+  opacity: 1;
+ }
+
+
+/*  table section style */
+
+ #myInput {
+   background-image: url('search.png');
+   background-position: 10px 10px;
+   background-repeat: no-repeat;
+   width: 100%;
+   font-size: 16px;
+   padding: 12px 20px 12px 40px;
+   border: 1px solid #79942e;
+   margin-bottom: 12px;
+  outline: none;
+ }
+
+ #myTable {
+   border-collapse: collapse;
+   width: 100%;
+   border: 1px solid #ddd;
+   font-size: 18px;
+ }
+
+ #myTable{
+   background-image:url(back4.png);
+   background-size:auto;
+ }
+
+ #myTable th, #myTable td {
+   text-align: left;
+   padding: 12px;
+ }
+
+ #myTable tr {
+   border-bottom: 1px solid #ddd;
+ }
+
+ table.food_table tr:hover td {
+   background-color: #d0cde15c;
+ }
+
+ thead {
+    background-color: #79942e;
+    color: white;
+}
+
+
+button {
+    background-color: #f4a842;
+    opacity: 0.8;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+button:hover{
+opacity: 1;
+}
+
+#textMsg{
+  display: none;
+}
+
+/* end of the table section style */
+
+
+ /* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 50%; /* Could be more or less, depending on screen size */
+background-image: url(back3.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+canvas{
+  display: block;
+  margin: 0 auto;
+}
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* carts style */
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cart_conatiner{
+  background-image: url(back7.png);
+  background-size:contain;
+background-color: #f4a2610f;
+}
+.cart_conatiner h1 {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.card :active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width:90%;
+  height:120%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+}
+
+.card:hover{
+  box-shadow: 0 10px 60px 0 rgb(68 68 68 / 17%);
+  transform: translateY(-5px);
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+  background-image: url(back3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.card img{
+border-radius: 50%;
+padding: 20px;
+border:3px solid #f4a842;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+/* end of carts style */
+.footer-section {
+  position: relative;
+  width: 100%;
+  min-height: 10vh;
+  background-color: #79942e;
+  padding: 5px;
+    color: black;
+    bottom: 0;
+    z-index: 1 ;
+    right:0;
+    display: block;
+    text-align: center;
+}
+.footer-section p{
+  font-size: 1.4em;
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
