@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Alegreya Sans', sans-serif;
+  /* font-family: 'Eczar', serif; */
+  font-family: 'Spinnaker', sans-serif;
 }
 a{
   color: black;
@@ -13,11 +15,13 @@ scroll-behavior: smooth !important;
 overflow-y: scroll;
 
 }
+
 section{
   position: relative;
   width: 100%;
   min-height: 100vh;
   padding: 100px;
+
 }
 
   .first_section{
@@ -95,7 +99,7 @@ section{
    position: relative;
    display: flex;
    justify-content: flex-end;
-  animation:animatetop 1s;
+   animation:animatetop 1s;
  }
  .textBox ul{
    position: relative;
@@ -259,13 +263,13 @@ background-color: #f4a2610f;
   padding: 20px;
   text-align: center;
   background-color: white;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 2s; /* Firefox < 16 */
-       -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-           animation: fadein 2s;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 3s; /* Firefox < 16 */
+       -ms-animation: fadein 3s; /* Internet Explorer */
+        -o-animation: fadein 3s; /* Opera < 12.1 */
+           animation: fadein 3s;
+            animation-delay: 2s;
 }
-
 .card:hover{
   box-shadow: 0 10px 60px 0 rgb(68 68 68 / 17%);
   transform: translateY(-5px);
@@ -302,6 +306,7 @@ margin-top: 20px;
 .footer-section p{
   font-size: 1.4em;
 }
+
 
 
 
