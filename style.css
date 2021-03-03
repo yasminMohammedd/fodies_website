@@ -251,14 +251,13 @@ background-color: #f4a2610f;
   margin-bottom: 10vh;
 }
 
-.card :active {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width:90%;
   height:120%;
   margin: auto;
   padding: 20px;
   text-align: center;
-  font-family: arial;
   background-color: white;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadein 2s; /* Firefox < 16 */
