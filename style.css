@@ -41,11 +41,11 @@ section{
   }
   .logo{
       position: relative;
-      width:18vh;
+      width:auto;
       vertical-align: middle;
       margin: 20px;
       border-bottom: 5px solid #79942e;
-      border-bottom-right-radius: 5px;
+      
   }
   header ul{
     position: relative;
