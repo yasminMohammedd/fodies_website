@@ -45,7 +45,7 @@ section{
       vertical-align: middle;
       margin: 20px;
       border-bottom: 5px solid #79942e;
-      
+
   }
   header ul{
     position: relative;
@@ -90,8 +90,8 @@ section{
    max-width: 80vh;
   line-height: 1.8em;
  }
- .textBox h1{
-   font-size: 4em;
+ .textBox h2{
+   font-size: 3.5em;
    line-height: 1.4em;
    font-weight: 500;
  }
@@ -106,23 +106,29 @@ section{
 
 
  }
- .textBox ul li{
+ /* .footer-section ul{
    list-style: none;
+      display: inline-block;
  }
-   .textBox ul li a{
+   .footer-section ul li a{
    display: inline-block;
    float: left;
    color:black;
    text-decoration:none;
    font-size: 15px;
- }
- .fa:hover{
-   color:#f19213;
+ } */
+
+
+
+ .span_btn{
+   margin-top: 10vh;
  }
  .span_btn a{
    display: inline-block;
+   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
    background-color: #f19213;
    text-align: center;
+   margin-top: 2vh;
    padding:10px;
    text-decoration: none;
    font-size: 1em;
@@ -307,7 +313,9 @@ margin-top: 20px;
   font-size: 1.4em;
 }
 
-
+.fa:hover{
+  color:#f19213;
+}
 
 
 @keyframes fadein {
