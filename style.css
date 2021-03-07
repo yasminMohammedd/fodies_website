@@ -91,7 +91,7 @@ section{
   line-height: 1.8em;
  }
  .textBox h2{
-   font-size: 3.5em;
+   font-size: 3.4em;
    line-height: 1.4em;
    font-weight: 500;
  }
@@ -118,11 +118,6 @@ section{
    font-size: 15px;
  } */
 
-
-
- .span_btn{
-   margin-top: 10vh;
- }
  .span_btn a{
    display: inline-block;
    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
